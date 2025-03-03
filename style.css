@@ -1,7 +1,33 @@
 *{
     margin:0;
     padding:0;
-}
+    font-family: "Poppins", sans-serif; /* Apply Poppins font to all elements */  
+}  
+
+.poppins-thin {  
+  font-weight: 100;  
+}  
+
+.poppins-extralight {  
+  font-weight: 200;  
+}  
+
+.poppins-light {  
+  font-weight: 300;  
+}  
+
+.poppins-regular {  
+  font-weight: 400;  
+}  
+
+.poppins-semibold {  
+  font-weight: 600;  
+}  
+
+.poppins-bold {  
+  font-weight: 700;  
+}  
+
 
 .header{
     min-height: 100vh;
@@ -19,12 +45,13 @@ nav{
     align-items: top;
 }
 nav img {
-    width: 110px;
+    width: 108px;
 }
 
 .nav-links{
     flex:1;
     text-align: right;
+
 }
 
 .nav-links ul li{
@@ -39,3 +66,74 @@ nav img {
     text-decoration: none;
     font-size: 14px;
 }
+
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: width 0.3s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 60px;
+}
+
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+.Hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding:12px 34px;
+    font-size:13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.Hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+
