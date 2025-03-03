@@ -4,7 +4,7 @@ $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_from = 'info@eduhub.com';
+$email_from = 'info@eduhub-tau.vercel.app';
 
 
 $email_subject = 'New Form Submission';
