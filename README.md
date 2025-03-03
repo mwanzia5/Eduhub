@@ -8,3 +8,4 @@
  fontawesomecdn
  googlefonts
  font awesome 4 icons
+ google maps
