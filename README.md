@@ -1,5 +1,5 @@
 # Eduhub
- Baic html and css website for a school 
+ Basic html and css website for a school 
 
  # Tools
  github
