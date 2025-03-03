@@ -9,15 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.svg"></a>
-            <div class="nav-links">
-                <i class="fa fa-times" ></i>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a> </li>
                     <li><a href="">ABOUT</a> </li>
@@ -27,7 +27,7 @@
                     
                 </ul>
             </div>
-            <i class="fa fa-bars" ></i>
+            <i class="fa fa-bars"onclick="showMenu()" ></i>
         </nav>
         <div class="text-box">
             <h1>Worlds Best University</h1>
@@ -37,7 +37,45 @@
 
     </section>
 
+<!----course -->
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>In hac habitasse platea dictumst. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.  </p>
 
+        <div class="row">
+            <div class="course-col">
+                <h2>Diploma</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+            </div>
+            <div class="row">
+                <div class="course-col">
+                    <h2>Degree</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+                <div class="row">
+                    <div class="course-col">
+                        <h2>Post Graduation</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                    </div>
+        </div>
+        
+    </section>
+
+
+
+
+
+<!---------Javascript for togglemenu----->
+
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu() {
+        navlinks.style.right = "0";
+    }
+    function hideMenu() {
+        navlinks.style.right = "-200px";
+    }
+</script>
 
 
 

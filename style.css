@@ -29,7 +29,8 @@
 }  
 
 
-.header{
+.header /* adds image to background and color*/
+{
     min-height: 100vh;
     width: 100%;
     background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
@@ -44,7 +45,8 @@ nav{
     justify-content: space-between;
     align-items: top;
 }
-nav img {
+nav img /* icon size*/
+{
     width: 108px;
 }
 
@@ -112,13 +114,17 @@ nav img {
     cursor: pointer;
 }
 
-.Hero-btn:hover{
+.Hero-btn:hover
+{
     border: 1px solid #f44336;
     background: #f44336;
     transition: 1s;
 }
-
-@media(max-width:700px){
+nav .fa{
+    display: none;
+}
+@media(max-width:700px) /*makes the website be responsive in mobile phones*/
+{
     .text-box h1{
         font-size: 20px;
     }
@@ -131,9 +137,44 @@ nav img {
         height: 100vh;
         width: 200px;
         top: 0;
-        right:0;
+        right: -200px;  /*makes the menu not appear*/
         text-align: left;
         z-index: 2;
+        transition: right 0.3s;
+    }
+    nav .fa{
+        display: block;
+        font-size: 22px;
+        color: #fff;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
     }
 }
 
+/*---course---*/
+
+.course  /*takes the  course texts to the center*/
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.course h1
+{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.course p 
+{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
