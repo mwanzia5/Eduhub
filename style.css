@@ -492,3 +492,32 @@ h2{
     padding: 8px;
     box-sizing: border-box;
 }
+
+.comment-box{
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin:50px 0;
+    
+}
+.comment-box h3 {
+    text-align: left;
+}
+
+.Comment-form input, .Comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 15px 0;
+    background: #f0f0f0;
+}
+
+.Comment-form{
+    margin: 10px 0;
+}
+
+@media(max-width:700px){
+     .sub-header h1{
+        font-size: 24px;
+     }
+}
